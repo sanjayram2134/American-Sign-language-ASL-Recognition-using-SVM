@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign language recoginition</title>
+    <link rel="Sheets" href="templates/epic.css">
+    <style>
+        .center_title{
+        display:flex;
+        justify-content: center
+        }
+        body{
+        color:white;
+        font-family: monospace;
+        background: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+        }
+        .wer4{
+        width:45rem;
+        border-radius:2rem
+        }
+
+
+
+    </style>
+</head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h1 class="mt-5">HAND SIGN DETECTOR</h1>
+                <div class="center_title">
+                <img src="{{ url_for('video_feed') }}" width="50%" class="wer4">
+                    </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+
+</html>
